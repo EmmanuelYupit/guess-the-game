@@ -35,7 +35,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f347ee609140a959cd30";
+/******/ 	var hotCurrentHash = "5544876224983151d758";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1715,8 +1715,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fusion-plugin-styletron-react */ "fusion-plugin-styletron-react");
-/* harmony import */ var fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _home_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.style */ "./src/pages/home.style.js");
 /* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-modal */ "react-modal");
 /* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/yupit/Documents/diseno-juegos/game-type/src/pages/home.js";
@@ -1726,47 +1725,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-const Container = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__["styled"])('div', {
-  width: '100%'
-});
-Container.displayName = "Container";
-const Title = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__["styled"])('div', {
-  textAlign: 'center'
-});
-Title.displayName = "Title";
-const ImagesContainer = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__["styled"])('div', {
-  display: 'flex',
-  flexFlow: 'row wrap'
-});
-ImagesContainer.displayName = "ImagesContainer";
-const Img = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__["styled"])('img', {
-  width: '300px',
-  height: '200px',
-  cursor: 'pointer',
-  marginLeft: '45px',
-  marginBottom: '10px'
-});
-Img.displayName = "Img";
-const ScoresContainer = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__["styled"])('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  marginLeft: '45px'
-});
-ScoresContainer.displayName = "ScoresContainer";
-const Score = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_1__["styled"])('p', {
-  margin: '0'
-});
-Score.displayName = "Score";
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
-  }
-};
 const initialState = {
   modalIsOpen: false,
   aswers: {
@@ -1892,80 +1850,116 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   render() {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Container"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 190
+        lineNumber: 159
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Title"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 191
+        lineNumber: 160
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 192
+        lineNumber: 161
       },
       __self: this
-    }, "Selecciona los juegos cooperativos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ScoresContainer, {
+    }, "Selecciona los juegos cooperativos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["ScoresWrap"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 194
+        lineNumber: 163
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Score, {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["PlayersInformation"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 195
+        lineNumber: 164
       },
       __self: this
-    }, "Respuestas correctas: ", this.state.correctCounter, " de 8"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Score, {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Score"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 196
+        lineNumber: 165
       },
       __self: this
-    }, "Respuestas incorrectas: ", this.state.incorrectCounter)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, "Player 1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Score"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 166
+      },
+      __self: this
+    }, "Respuestas correctas: ", this.state.correctCounter), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Score"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 167
+      },
+      __self: this
+    }, "Respuestas incorrectas: ", this.state.incorrectCounter)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["PlayersInformation"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 169
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Score"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 170
+      },
+      __self: this
+    }, "Player 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Score"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 171
+      },
+      __self: this
+    }, "Respuestas correctas: ", this.state.correctCounter), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Score"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 172
+      },
+      __self: this
+    }, "Respuestas incorrectas: ", this.state.incorrectCounter))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_2___default.a, {
       isOpen: this.state.modalIsOpen,
       onRequestClose: () => this.closeModal(),
       contentLabel: "Example Modal",
-      style: customStyles,
+      style: _home_style__WEBPACK_IMPORTED_MODULE_1__["customStyles"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 198
+        lineNumber: 175
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 204
+        lineNumber: 181
       },
       __self: this
     }, "Te hace falta jugar m\xE1s :( int\xE9ntalo de nuevo."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       onClick: () => this.closeModal(),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 205
+        lineNumber: 182
       },
       __self: this
-    }, "close")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImagesContainer, {
+    }, "close")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["ImagesContainer"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 207
+        lineNumber: 184
       },
       __self: this
     }, this.state.games.map(({
       url
-    }, index) => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Img, {
+    }, index) => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_style__WEBPACK_IMPORTED_MODULE_1__["Img"], {
       key: index,
       src: url,
       onClick: () => this.changeImage(index),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 209
+        lineNumber: 186
       },
       __self: this
     }))));
@@ -1974,6 +1968,73 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./src/pages/home.style.js":
+/*!*********************************!*\
+  !*** ./src/pages/home.style.js ***!
+  \*********************************/
+/*! exports provided: Container, Title, ImagesContainer, Img, ScoresWrap, PlayersInformation, Score, customStyles */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title", function() { return Title; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImagesContainer", function() { return ImagesContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Img", function() { return Img; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScoresWrap", function() { return ScoresWrap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayersInformation", function() { return PlayersInformation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Score", function() { return Score; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "customStyles", function() { return customStyles; });
+/* harmony import */ var fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fusion-plugin-styletron-react */ "fusion-plugin-styletron-react");
+/* harmony import */ var fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Container = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__["styled"])('div', {
+  width: '100%'
+});
+Container.displayName = "Container";
+const Title = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__["styled"])('div', {
+  textAlign: 'center'
+});
+Title.displayName = "Title";
+const ImagesContainer = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__["styled"])('div', {
+  display: 'flex',
+  flexFlow: 'row wrap'
+});
+ImagesContainer.displayName = "ImagesContainer";
+const Img = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__["styled"])('img', {
+  width: '300px',
+  height: '200px',
+  cursor: 'pointer',
+  marginLeft: '45px',
+  marginBottom: '10px'
+});
+Img.displayName = "Img";
+const ScoresWrap = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__["styled"])('div', {
+  display: 'flex',
+  justifyContent: 'space-between'
+});
+ScoresWrap.displayName = "ScoresWrap";
+const PlayersInformation = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__["styled"])('div', {
+  margin: '0 30px 20px 45px'
+});
+PlayersInformation.displayName = "PlayersInformation";
+const Score = Object(fusion_plugin_styletron_react__WEBPACK_IMPORTED_MODULE_0__["styled"])('p', {
+  margin: '0'
+});
+Score.displayName = "Score";
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  }
+};
 
 /***/ }),
 

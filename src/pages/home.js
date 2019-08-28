@@ -1,47 +1,16 @@
 import React, { Component } from 'react';
-import { styled } from 'fusion-plugin-styletron-react';
+import {
+  Container,
+  Title,
+  ImagesContainer,
+  Img,
+  ScoresWrap,
+  Score,
+  PlayersInformation,
+  customStyles,
+} from './home.style';
 import Modal from 'react-modal';
 
-const Container = styled('div', {
-  width: '100%',
-});
-
-const Title = styled('div', {
-  textAlign: 'center',
-});
-
-const ImagesContainer = styled('div', {
-  display: 'flex',
-  flexFlow: 'row wrap',
-});
-
-const Img = styled('img', {
-  width: '300px',
-  height: '200px',
-  cursor: 'pointer',
-  marginLeft: '45px',
-  marginBottom: '10px',
-});
-
-const ScoresContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  marginLeft: '45px',
-});
-
-const Score = styled('p', {
-  margin: '0',
-});
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
 const initialState = {
   modalIsOpen: false,
   aswers: {
@@ -191,10 +160,18 @@ class Home extends Component {
         <Title>
           <h1>Selecciona los juegos cooperativos</h1>
         </Title>
-        <ScoresContainer>
-          <Score>Respuestas correctas: {this.state.correctCounter} de 8</Score>
-          <Score>Respuestas incorrectas: {this.state.incorrectCounter}</Score>
-        </ScoresContainer>
+        <ScoresWrap>
+          <PlayersInformation>
+            <Score>Player 1</Score>
+            <Score>Respuestas correctas: {this.state.correctCounter}</Score>
+            <Score>Respuestas incorrectas: {this.state.incorrectCounter}</Score>
+          </PlayersInformation>
+          <PlayersInformation>
+            <Score>Player 2</Score>
+            <Score>Respuestas correctas: {this.state.correctCounter}</Score>
+            <Score>Respuestas incorrectas: {this.state.incorrectCounter}</Score>
+          </PlayersInformation>
+        </ScoresWrap>
         <Modal
           isOpen={this.state.modalIsOpen}
           onRequestClose={() => this.closeModal()}
